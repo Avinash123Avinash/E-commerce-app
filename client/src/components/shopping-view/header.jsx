@@ -247,7 +247,7 @@ function HeaderRightContent() {
     // dispatch(logoutUser());
     dispatch(resetTokenAndCredentials());
     sessionStorage.clear();
-    navigate('/auth/login');
+    navigate("/auth/login");
   }
 
   useEffect(() => {

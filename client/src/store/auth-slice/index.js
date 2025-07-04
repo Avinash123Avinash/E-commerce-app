@@ -144,6 +144,8 @@ const initialState = {
   isLoading: true,
   user: null,
   token : null,
+  // change
+  addressList: [],
 };
 
 export const registerUser = createAsyncThunk(
@@ -205,6 +207,8 @@ export const checkAuth = createAsyncThunk(
           "Cache-Control":
             "no-store, no-cache, must-revalidate, proxy-revalidate",
         },
+        // chnage
+        withCredentials: true,
       }
     );
 
